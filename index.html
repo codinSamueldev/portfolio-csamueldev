@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4ecfd52a8a.js" crossorigin="anonymous"></script>
     <title>Your Name | Developer Portfolio</title>
     <style>
         /* CSS Reset & Base Styles */
@@ -36,11 +37,10 @@
 
         h1, h2, h3 {
             font-weight: 700;
-            margin-bottom: 0.5rem;
         }
 
         p {
-            margin-bottom: 1rem;
+            margin-bottom: 0.3rem;
             color: var(--text-secondary);
         }
 
@@ -155,22 +155,62 @@
         .profile-pic {
             width: 120px;
             height: 120px;
-            border-radius: 50%;
-            margin-bottom: 1rem;
-            border: 3px solid var(--accent-color);
-            overflow: hidden;
             position: relative;
+        }
+
+        .profile-pic::before {
+            content: '';
+            position: absolute;
+            top: -3px;
+            left: -3px;
+            right: -3px;
+            bottom: -3px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, var(--accent-color), rgba(187, 134, 252, 0.5));
+            z-index: 1;
+        }
+
+        .profile-pic::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: 50%;
+            background: var(--card-color);
+            z-index: 2;
         }
 
         .profile-pic img {
             width: 100%;
             height: 100%;
             object-fit: cover;
+            border-radius: 50%;
+            position: relative;
+            z-index: 3;
+            transition: transform var(--transition-speed);
+        }
+
+        .profile-pic:hover img {
+            transform: scale(1.05);
+        }
+
+        .profile-pic:hover::before {
+            animation: rotate 4s linear infinite;
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
         }
 
         .name {
             font-size: 2rem;
-            margin-bottom: 0.5rem;
         }
 
         .title {
@@ -281,6 +321,7 @@
             align-items: center;
             gap: 0.5rem;
             color: var(--accent-color);
+            font-size: 30px;
         }
 
         /* Experience Timeline */
@@ -367,13 +408,13 @@
             <div class="profile-pic">
                 <img src="./assets/professional_Pic.webp" alt="Your Profile Picture">
             </div>
-            <h1 class="name">Your Name</h1>
+            <h1 class="name">Samuel Henao</h1>
             <p class="title">Full Stack Developer</p>
             <p>Crafting elegant solutions to complex problems</p>
             <div class="contact-links">
-                <a href="mailto:your.email@example.com" class="contact-link">Email</a>
-                <a href="https://github.com/yourusername" class="contact-link">GitHub</a>
-                <a href="https://linkedin.com/in/yourusername" class="contact-link">LinkedIn</a>
+                <a target="_blank" href="mailto:codinsamueldev@gmail.com" class="contact-link"><i class="fa-regular fa-paper-plane"></i></a>
+                <a target="_blank" href="https://github.com/codinsamueldev" class="contact-link"><i class="fa-brands fa-github"></i></a>
+                <a target="_blank" href="https://linkedin.com/in/codinsamueldev" class="contact-link"><i class="fa-brands fa-linkedin"></i></a>
             </div>
         </div>
 
@@ -381,8 +422,9 @@
         <div class="card about-card">
             <h2 class="card-title">About Me</h2>
             <div class="card-content">
-                <p>I'm a passionate developer with a keen eye for design and a love for creating intuitive user experiences. With a background in both front-end and back-end development, I bring a holistic approach to every project.</p>
-                <p>When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or enjoying the outdoors.</p>
+                <p>
+                    &#128161; I specialize in building scalable web applications using Python, Django, FastAPI, and some JavaScript. My focus is on creating efficient, high-performance solutions that solve real-world problems.
+                </p>
             </div>
         </div>
 
@@ -409,23 +451,24 @@
         <div class="card featured-project-card project-card">
             <img src="./assets/image.webp" alt="Project Screenshot" class="project-image">
             <div class="project-content">
-                <h2 class="card-title">Featured Project</h2>
-                <h3>Project Name</h3>
-                <p>A brief description of your featured project. Highlight the key technologies used and the problems it solves.</p>
+                <h2 class="card-title">Featured</h2>
+                <h3>Real Estate Site</h3>
+                <p>Web app that help home-buyers finding their ideal property without funny paperwork, and, agents/realtors can post their available lands with barely putting effort.</p>
                 <div class="tech-pills">
                     <div class="tech-pill">
-                        <span class="tech-pill-icon">N</span>
-                        <span>Next.js</span>
+                        <span class="tech-pill-icon"><i class="fa-brands fa-python"></i></span>
+                        <span>Python</span>
                     </div>
                     <div class="tech-pill">
-                        <span class="tech-pill-icon">R</span>
-                        <span>React</span>
+                        <span class="tech-pill-icon"><i class="fa-brands fa-js"></i></span>
+                        <span>JavaScript</span>
                     </div>
                     <div class="tech-pill">
-                        <span class="tech-pill-icon">T</span>
-                        <span>TypeScript</span>
+                        <span class="tech-pill-icon"><i class="fa-brands fa-css3-alt"></i></span>
+                        <span>CSS</span>
                     </div>
                 </div>
+                <a href="https://realstatedeploy77.pythonanywhere.com/" target="_blank" rel="noopener noreferrer">Link</a>
             </div>
         </div>
 
@@ -505,13 +548,8 @@
             <h2 class="card-title">Let's Connect</h2>
             <div class="card-content">
                 <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
-                <p><strong>Email:</strong> your.email@example.com</p>
-                <p><strong>Based in:</strong> Your Location</p>
-                <div class="contact-links">
-                    <a href="https://github.com/yourusername" class="contact-link">GitHub</a>
-                    <a href="https://linkedin.com/in/yourusername" class="contact-link">LinkedIn</a>
-                    <a href="https://twitter.com/yourusername" class="contact-link">Twitter</a>
-                </div>
+                <p><strong><i class="fa-regular fa-paper-plane"></i></strong> codinsamueldev@gmail.com</p>
+                <p><strong>Based in:</strong> Colombia</p>
             </div>
         </div>
     </div>
