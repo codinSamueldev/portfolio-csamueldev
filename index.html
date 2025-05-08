@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https:; script-src 'self' https://kit.fontawesome.com https://www.clarity.ms; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;">
     <link rel="icon" href="./assets/address-card-regular-blue.svg">
     <script src="https://kit.fontawesome.com/4ecfd52a8a.js" crossorigin="anonymous"></script>
     <script type="text/javascript">
@@ -671,223 +672,232 @@
     </style>
 </head>
 <body>
-    <div class="bento-grid">
-        <!-- Profile Card -->
-        <div class="card profile-card scrollable">
-            <div class="profile-pic">
-                <img src="./assets/professional_Pic.webp" alt="Your Profile Picture" loading="lazy">
+    <a href="#main-content" class="skip-link" style="position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden;z-index:1000;background:#fff;color:#000;padding:8px 16px;border-radius:4px;">Skip to main content</a>
+    <nav aria-label="Primary">
+        <!-- Navigation could go here if you add more pages/sections -->
+    </nav>
+    <main id="main-content">
+        <div class="bento-grid">
+            <!-- Profile Card -->
+            <div class="card profile-card scrollable">
+                <div class="profile-pic">
+                    <img src="./assets/professional_Pic.webp" alt="Your Profile Picture" loading="lazy">
+                </div>
+                <h1 class="name">Samuel Henao</h1>
+                <p class="title">Full Stack Developer</p>
+                <p>Crafting elegant solutions to complex problems</p>
+                <div class="contact-links">
+                    <a target="_blank" href="mailto:codinsamueldev@gmail.com" class="contact-link" aria-label="Email Samuel Henao"><i class="fa-regular fa-paper-plane"></i></a>
+                    <a target="_blank" href="https://github.com/codinsamueldev" class="contact-link" aria-label="GitHub Profile"><i class="fa-brands fa-github"></i></a>
+                    <a target="_blank" href="https://linkedin.com/in/codinsamueldev" class="contact-link" aria-label="LinkedIn Profile"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
             </div>
-            <h1 class="name">Samuel Henao</h1>
-            <p class="title">Full Stack Developer</p>
-            <p>Crafting elegant solutions to complex problems</p>
-            <div class="contact-links">
-                <a target="_blank" href="mailto:codinsamueldev@gmail.com" class="contact-link"><i class="fa-regular fa-paper-plane"></i></a>
-                <a target="_blank" href="https://github.com/codinsamueldev" class="contact-link"><i class="fa-brands fa-github"></i></a>
-                <a target="_blank" href="https://linkedin.com/in/codinsamueldev" class="contact-link"><i class="fa-brands fa-linkedin"></i></a>
-            </div>
-        </div>
 
-        <!-- About Me Card -->
-        <div class="card about-card">
-            <h2 class="card-title">About Me</h2>
-            <div class="card-content scrollable">
-                <p>
-                    &#128161; I specialize in building scalable, high-performance web applications using Python, Django, and FastAPI. 
-                    With a strong background in backend development, I focus on crafting efficient solutions that drive business growth.
-                    Passionate about automation, AI, and business-oriented development, I love turning complex problems into elegant solutions.
-                    &#128640; Let's connect to build your next digital product!
-                </p>
+            <!-- About Me Card -->
+            <div class="card about-card">
+                <h2 class="card-title">About Me</h2>
+                <div class="card-content scrollable">
+                    <p>
+                        &#128161; I specialize in building scalable, high-performance web applications using Python, Django, and FastAPI. 
+                        With a strong background in backend development, I focus on crafting efficient solutions that drive business growth.
+                        Passionate about automation, AI, and business-oriented development, I love turning complex problems into elegant solutions.
+                        &#128640; Let's connect to build your next digital product!
+                    </p>
+                </div>
             </div>
-        </div>
 
-        <!-- Tech Stack Card -->
-        <div class="card tech-stack-card tech-stack-edge">
-            <div class="tech-stack-icons" role="list">
-                <div class="tech-icon" tabindex="0" aria-label="Python">
-                    <i class="fa-brands fa-python"></i>
-                    <span class="tech-tooltip">Python</span>
-                </div>
-                <div class="tech-icon" tabindex="0" aria-label="Django">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django" />
-                    <span class="tech-tooltip">Django</span>
-                </div>
-                <div class="tech-icon" tabindex="0" aria-label="FastAPI">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" alt="FastAPI" />
-                    <span class="tech-tooltip">FastAPI</span>
-                </div>
-                <div class="tech-icon" tabindex="0" aria-label="JavaScript">
-                    <i class="fa-brands fa-js"></i>
-                    <span class="tech-tooltip">JavaScript</span>
-                </div>
-                <div class="tech-icon" tabindex="0" aria-label="Git">
-                    <i class="fa-brands fa-git-alt"></i>
-                    <span class="tech-tooltip">Git</span>
-                </div>
-                <div class="tech-icon" tabindex="0" aria-label="PostgreSQL">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" />
-                    <span class="tech-tooltip">PostgreSQL</span>
-                </div>
-                <div class="tech-icon" tabindex="0" aria-label="Docker">
-                    <i class="fa-brands fa-docker"></i>
-                    <span class="tech-tooltip">Docker</span>
-                </div>
-                <div class="tech-icon" tabindex="0" aria-label="AWS">
-                    <i class="fa-brands fa-aws"></i>
-                    <span class="tech-tooltip">AWS</span>
-                </div>
-                <div class="tech-icon" tabindex="0" aria-label="HTML5">
-                    <i class="fa-brands fa-html5"></i>
-                    <span class="tech-tooltip">HTML5</span>
-                </div>
-                <div class="tech-icon" tabindex="0" aria-label="CSS3">
-                    <i class="fa-brands fa-css3-alt"></i>
-                    <span class="tech-tooltip">CSS3</span>
+            <!-- Tech Stack Card -->
+            <div class="card tech-stack-card tech-stack-edge">
+                <div class="tech-stack-icons" role="list">
+                    <div class="tech-icon" tabindex="0" aria-label="Python">
+                        <i class="fa-brands fa-python"></i>
+                        <span class="tech-tooltip">Python</span>
+                    </div>
+                    <div class="tech-icon" tabindex="0" aria-label="Django">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django" />
+                        <span class="tech-tooltip">Django</span>
+                    </div>
+                    <div class="tech-icon" tabindex="0" aria-label="FastAPI">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" alt="FastAPI" />
+                        <span class="tech-tooltip">FastAPI</span>
+                    </div>
+                    <div class="tech-icon" tabindex="0" aria-label="JavaScript">
+                        <i class="fa-brands fa-js"></i>
+                        <span class="tech-tooltip">JavaScript</span>
+                    </div>
+                    <div class="tech-icon" tabindex="0" aria-label="Git">
+                        <i class="fa-brands fa-git-alt"></i>
+                        <span class="tech-tooltip">Git</span>
+                    </div>
+                    <div class="tech-icon" tabindex="0" aria-label="PostgreSQL">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" />
+                        <span class="tech-tooltip">PostgreSQL</span>
+                    </div>
+                    <div class="tech-icon" tabindex="0" aria-label="Docker">
+                        <i class="fa-brands fa-docker"></i>
+                        <span class="tech-tooltip">Docker</span>
+                    </div>
+                    <div class="tech-icon" tabindex="0" aria-label="AWS">
+                        <i class="fa-brands fa-aws"></i>
+                        <span class="tech-tooltip">AWS</span>
+                    </div>
+                    <div class="tech-icon" tabindex="0" aria-label="HTML5">
+                        <i class="fa-brands fa-html5"></i>
+                        <span class="tech-tooltip">HTML5</span>
+                    </div>
+                    <div class="tech-icon" tabindex="0" aria-label="CSS3">
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <span class="tech-tooltip">CSS3</span>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Featured Project Card -->
-        <div class="card featured-project-card project-card">
-            <span class="project-badge">Featured</span>
-            <div class="project-image-wrapper">
-                <img src="./assets/image.webp" alt="Project Screenshot" class="project-image" loading="lazy">
-                <div class="project-image-overlay"></div>
-            </div>
-            <div class="project-content scrollable">
-                <h2 class="card-title">Featured</h2>
-                <h3>Real Estate Site</h3>
-                <p>Web app that helps home-buyers finding their ideal property without funny paperwork, and, agents/realtors can post their available lands with barely putting any effort.</p>
-                <div class="tech-pills">
-                    <div class="tech-pill accent-pill">
-                        <span class="tech-pill-icon"><i class="fa-brands fa-python"></i></span>
-                        <span>Python</span>
+            <!-- Featured Project Card -->
+            <div class="card featured-project-card project-card">
+                <span class="project-badge">Featured</span>
+                <div class="project-image-wrapper">
+                    <img src="./assets/image.webp" alt="Project Screenshot" class="project-image" loading="lazy">
+                    <div class="project-image-overlay"></div>
+                </div>
+                <div class="project-content scrollable">
+                    <h2 class="card-title">Featured</h2>
+                    <h3>Real Estate Site</h3>
+                    <p>Web app that helps home-buyers finding their ideal property without funny paperwork, and, agents/realtors can post their available lands with barely putting any effort.</p>
+                    <div class="tech-pills">
+                        <div class="tech-pill accent-pill">
+                            <span class="tech-pill-icon"><i class="fa-brands fa-python"></i></span>
+                            <span>Python</span>
+                        </div>
+                        <div class="tech-pill accent-pill">
+                            <span class="tech-pill-icon"><i class="fa-brands fa-js"></i></span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="tech-pill accent-pill">
+                            <span class="tech-pill-icon"><i class="fa-brands fa-css3-alt"></i></span>
+                            <span>CSS</span>
+                        </div>
                     </div>
-                    <div class="tech-pill accent-pill">
-                        <span class="tech-pill-icon"><i class="fa-brands fa-js"></i></span>
-                        <span>JavaScript</span>
-                    </div>
-                    <div class="tech-pill accent-pill">
-                        <span class="tech-pill-icon"><i class="fa-brands fa-css3-alt"></i></span>
-                        <span>CSS</span>
+                    <div class="project-links">
+                        <a class="project-url-link" href="https://realstatedeploy77.pythonanywhere.com/" target="_blank" rel="noopener noreferrer" aria-label="View Real Estate Site live"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a class="project-github-link" href="https://github.com/codinsamueldev/real-state-site" target="_blank" rel="noopener noreferrer" aria-label="View Real Estate Site on GitHub"><i class="fa-brands fa-git-alt"></i></a>
                     </div>
                 </div>
-                <div class="project-links">
-                    <a class="project-url-link" href="https://realstatedeploy77.pythonanywhere.com/" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    <a class="project-github-link" href="https://github.com/codinsamueldev/real-state-site" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-git-alt"></i></a>
-                </div>
             </div>
-        </div>
 
-        <!-- Experience Card -->
-        <div class="card experience-card">
-            <h2 class="card-title">Experience</h2>
-            <div class="card-content scrollable">
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-date">2023 - Present</div>
-                        <div class="timeline-role">Self-Initiated Projects</div>
-                        <!--<div class="timeline-company">Company Name</div>-->
-                        <p>
-                            Developed <strong> Real Estate Site</strong> - Web app that connects home buyers with agents.
-                        </p>
-                        <p>
-                            Built <strong> MY Social Media App</strong> - A fun, restriction-free social platform.
-                        </p>
-                        <p>
-                            Engineered <strong> Sales Funnel</strong> System - Automated sales checkout with Stripe.
-                        </p>
-                        <p>
-                            Built projects for friends, family, or personal brand as practice.
-                        </p>
+            <!-- Experience Card -->
+            <div class="card experience-card">
+                <h2 class="card-title">Experience</h2>
+                <div class="card-content scrollable">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-date">2023 - Present</div>
+                            <div class="timeline-role">Self-Initiated Projects</div>
+                            <!--<div class="timeline-company">Company Name</div>-->
+                            <p>
+                                Developed <strong> Real Estate Site</strong> - Web app that connects home buyers with agents.
+                            </p>
+                            <p>
+                                Built <strong> MY Social Media App</strong> - A fun, restriction-free social platform.
+                            </p>
+                            <p>
+                                Engineered <strong> Sales Funnel</strong> System - Automated sales checkout with Stripe.
+                            </p>
+                            <p>
+                                Built projects for friends, family, or personal brand as practice.
+                            </p>
+                        </div>
+                        <!--
+                        <div class="timeline-item">
+                            <div class="timeline-date">2020 - 2022</div>
+                            <div class="timeline-role">Full Stack Developer</div>
+                            <div class="timeline-company">Previous Company</div>
+                            <p>Developed and maintained multiple web applications using React, Node.js, and MongoDB. Collaborated with design team to implement responsive UI.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2018 - 2020</div>
+                            <div class="timeline-role">Front-end Developer</div>
+                            <div class="timeline-company">First Company</div>
+                            <p>Created responsive web interfaces and implemented design systems. Improved site performance by 30%.</p>
+                        </div>
+                        -->
                     </div>
-                    <!--
-                    <div class="timeline-item">
-                        <div class="timeline-date">2020 - 2022</div>
-                        <div class="timeline-role">Full Stack Developer</div>
-                        <div class="timeline-company">Previous Company</div>
-                        <p>Developed and maintained multiple web applications using React, Node.js, and MongoDB. Collaborated with design team to implement responsive UI.</p>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-date">2018 - 2020</div>
-                        <div class="timeline-role">Front-end Developer</div>
-                        <div class="timeline-company">First Company</div>
-                        <p>Created responsive web interfaces and implemented design systems. Improved site performance by 30%.</p>
-                    </div>
-                    -->
                 </div>
             </div>
-        </div>
 
-        <!-- Project 2 Card -->
-        <div class="card project-2-card project-card">
-            <div class="project-content scrollable">
-                <h2 class="card-title">MY</h2>
-                <p>
-                    A fun and unrestricted social media platform where users can post anything, 
-                    express themselves freely, and engage without limitations. 
-                    Designed to create an entertaining, judgment-free space for casual interaction.
-                </p>
-                <div class="tech-pills">
-                    <div class="tech-pill">
-                        <span class="tech-pill-icon">dj</span>
-                        <span>Django</span>
+            <!-- Project 2 Card -->
+            <div class="card project-2-card project-card">
+                <div class="project-content scrollable">
+                    <h2 class="card-title">MY</h2>
+                    <p>
+                        A fun and unrestricted social media platform where users can post anything, 
+                        express themselves freely, and engage without limitations. 
+                        Designed to create an entertaining, judgment-free space for casual interaction.
+                    </p>
+                    <div class="tech-pills">
+                        <div class="tech-pill">
+                            <span class="tech-pill-icon">dj</span>
+                            <span>Django</span>
+                        </div>
+                        <div class="tech-pill">
+                            <span class="tech-pill-icon"><i class="fa-brands fa-html5"></i></span>
+                            <span>HTML</span>
+                        </div>
+                        <div class="tech-pill">
+                            <span class="tech-pill-icon"><i class="fa-brands fa-css3-alt"></i></span>
+                            <span>CSS</span>
+                        </div>
                     </div>
-                    <div class="tech-pill">
-                        <span class="tech-pill-icon"><i class="fa-brands fa-html5"></i></span>
-                        <span>HTML</span>
+                    <div class="project-links">
+                        <a class="project-url-link" href="https://mysocialdeploy.pythonanywhere.com/" target="_blank" rel="noopener noreferrer" aria-label="View MY Social Media App live"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a class="project-github-link" href="https://github.com/codinsamueldev/my" target="_blank" rel="noopener noreferrer" aria-label="View MY Social Media App on GitHub"><i class="fa-brands fa-git-alt"></i></a>
                     </div>
-                    <div class="tech-pill">
-                        <span class="tech-pill-icon"><i class="fa-brands fa-css3-alt"></i></span>
-                        <span>CSS</span>
-                    </div>
-                </div>
-                <div class="project-links">
-                    <a class="project-url-link" href="https://mysocialdeploy.pythonanywhere.com/" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    <a class="project-github-link" href="https://github.com/codinsamueldev/my" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-git-alt"></i></a>
                 </div>
             </div>
-        </div>
 
-        <!-- Project 3 Card -->
-        <div class="card project-3-card project-card">
-            <div class="project-content scrollable">
-                <h2 class="card-title">Sales Funnel</h2>
-                <p>
-                    Built a high-converting sales funnel automation that streamlines customer journeys from lead capture to conversion. 
-                    Designed for businesses aiming to optimize sales processes
-                </p>
-                <div class="tech-pills">
-                    <div class="tech-pill">
-                        <span class="tech-pill-icon"><i class="fa-brands fa-html5"></i></span>
-                        <span>HTML</span>
+            <!-- Project 3 Card -->
+            <div class="card project-3-card project-card">
+                <div class="project-content scrollable">
+                    <h2 class="card-title">Sales Funnel</h2>
+                    <p>
+                        Built a high-converting sales funnel automation that streamlines customer journeys from lead capture to conversion. 
+                        Designed for businesses aiming to optimize sales processes
+                    </p>
+                    <div class="tech-pills">
+                        <div class="tech-pill">
+                            <span class="tech-pill-icon"><i class="fa-brands fa-html5"></i></span>
+                            <span>HTML</span>
+                        </div>
+                        <div class="tech-pill">
+                            <span class="tech-pill-icon"><i class="fa-brands fa-css3-alt"></i></span>
+                            <span>CSS</span>
+                        </div>
+                        <div class="tech-pill">
+                            <span class="tech-pill-icon">S</span>
+                            <span>Stripe</span>
+                        </div>
                     </div>
-                    <div class="tech-pill">
-                        <span class="tech-pill-icon"><i class="fa-brands fa-css3-alt"></i></span>
-                        <span>CSS</span>
+                    <div class="project-links">
+                        <a class="project-url-link" href="https://random-sales-funnel.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="View Sales Funnel live"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a class="project-github-link" href="https://github.com/codinsamueldev/random_sales_funnel" target="_blank" rel="noopener noreferrer" aria-label="View Sales Funnel on GitHub"><i class="fa-brands fa-git-alt"></i></a>
                     </div>
-                    <div class="tech-pill">
-                        <span class="tech-pill-icon">S</span>
-                        <span>Stripe</span>
-                    </div>
-                </div>
-                <div class="project-links">
-                    <a class="project-url-link" href="https://random-sales-funnel.vercel.app/" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    <a class="project-github-link" href="https://github.com/codinsamueldev/random_sales_funnel" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-git-alt"></i></a>
                 </div>
             </div>
-        </div>
 
-        <!-- Contact Card (CTA) -->
-        <div class="card connect-card cta-card">
-            <div class="cta-content">
-                <h2 class="cta-headline">Let's Work Together!</h2>
-                <p class="cta-subtext">Ready to build something amazing? I'm available for new projects and collaborations.</p>
-                <a href="mailto:codinsamueldev@gmail.com" class="cta-btn" aria-label="Start a conversation via email">
-                    <span class="cta-btn-text">Start a Conversation</span>
-                    <i class="fa-regular fa-paper-plane"></i>
-                </a>
+            <!-- Contact Card (CTA) -->
+            <div class="card connect-card cta-card">
+                <div class="cta-content">
+                    <h2 class="cta-headline">Let's Work Together!</h2>
+                    <p class="cta-subtext">Ready to build something amazing? I'm available for new projects and collaborations.</p>
+                    <a href="mailto:codinsamueldev@gmail.com" class="cta-btn" aria-label="Start a conversation via email">
+                        <span class="cta-btn-text">Start a Conversation</span>
+                        <i class="fa-regular fa-paper-plane"></i>
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
+    </main>
+    <footer>
+        <p style="text-align:center;color:var(--text-secondary);font-size:0.95rem;margin-top:2rem;">&copy; 2024 Samuel Henao (csamueldev). All rights reserved.</p>
+    </footer>
 </body>
 </html>
